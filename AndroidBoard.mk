@@ -19,7 +19,7 @@ ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/jbd2.ko | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_RECOVERY_ROOT_OUT)/res/modules/ext4.so
+file := $(TARGET_RECOVERY_ROOT_OUT)/res/modules/ext4.ko
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/ext4.ko | $(ACP)
 	$(transform-prebuilt-to-target)
