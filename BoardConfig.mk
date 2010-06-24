@@ -49,3 +49,5 @@ BOARD_EGL_CFG := vendor/htc/bravo/egl.cfg
 ENABLE_ANIMATED_GIF := true
 ALLOW_LGPL := true
 
+BOARD_SDEXT_FILESYSTEM := ext3
+
