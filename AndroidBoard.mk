@@ -9,28 +9,6 @@ ALL_PREBUILT += $(file)
 $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
 	$(transform-prebuilt-to-target)
 
-file := $(TARGET_RECOVERY_ROOT_OUT)/res/modules/crc16.ko
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/crc16.ko | $(ACP)
-	$(transform-prebuilt-to-target)
-
-file := $(TARGET_RECOVERY_ROOT_OUT)/res/modules/jbd2.ko
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/jbd2.ko | $(ACP)
-	$(transform-prebuilt-to-target)
-
-file := $(TARGET_RECOVERY_ROOT_OUT)/res/modules/ext4.ko
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/ext4.ko | $(ACP)
-	$(transform-prebuilt-to-target)
-
-
-file := $(TARGET_RECOVERY_ROOT_OUT)/sbin/postrecoveryboot.sh
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/postrecoveryboot.sh | $(ACP)
-	$(transform-prebuilt-to-target)
-
-
 file := $(TARGET_OUT)/lib/libhtc_ril.so
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/libhtc_ril.so | $(ACP)
